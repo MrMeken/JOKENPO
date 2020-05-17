@@ -1,0 +1,140 @@
+body {
+    background-color: #333333;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blueviolet;
+    text-justify: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.score {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large;
+}
+
+.score div p {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 8px;
+
+}
+
+.thin-text {
+    font-weight: 100;
+}
+
+.styled-thingy {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    border-top:    blueviolet 1px solid;
+    border-bottom: blueviolet 1px solid;
+}
+
+#intro {
+    height: 70vh;
+    transition: opacity 5s ease 0;
+}
+
+.bezzle {
+    padding: 30px;
+    border: blueviolet 2px solid;
+    margin: auto;
+}
+
+#play-button {
+    top: -1px;
+    font-size: 40px;
+    position: relative;
+    background-color: #333333;
+    color: blueviolet;
+    display: block;
+    margin: auto;
+    left: -30px;
+    border-top: blueviolet 1px solid;
+} 
+
+#play-button:hover {
+    background-color: blueviolet;
+    color: #333333;
+    cursor: pointer;
+}
+
+.winner {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 35px;
+}
+
+.player-hand {
+    position: relative;
+    transform: rotateY(180deg);
+}
+
+.computer-hand {
+    position: relative;
+}
+
+#hands {
+    pointer-events: none;
+    position: relative;
+}
+
+#hands, .options{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@keyframes bobbing {
+    0%{  top:  0px;}
+    25%{ top:-20px;}
+    50%{ top:  0px;}
+    75%{ top:-20px;}
+    100%{top:  0px;}
+}
+@keyframes shaking {
+    0%{  top:  0px;}
+    25%{ top:-20px;}
+    50%{ top:  0px;}
+    75%{ top:-20px;}
+    100%{top:  0px;}
+}
+
+.options {
+    padding-bottom: 20px;
+}
+
+.options button {
+    padding: 30px;
+    border: blueviolet 2px solid;
+    margin: auto;
+    background: none;
+    color: blueviolet;
+    width: 100px;
+    text-justify: center;
+}
+
+.options button:hover {
+    background-color: blueviolet;
+    color: #333333;
+    cursor: pointer;
+}
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+}
+
+div.fadeIn {
+    display: inline;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#match {
+    transition: opacity 5s ease 5s;
+}
